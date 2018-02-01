@@ -1,7 +1,4 @@
-# Chronos
-
-*This document will be upadted as decisions and actions are taken toward completion*
-Last Update - 1/30/17
+# Project Proposal
 
 The purpose of this project is to help a group or groups of people to find common times
 when they are free to work. This would be done by having work groups and a user schedule.
@@ -34,4 +31,4 @@ an SMS service to allow group members to message each other.
 A simple example might be two people finding a time to meet about something. Both users would have their schedule
 saved to their account. They would join a group together and navigate to a page that displays free time in common.
 They then may agree on a time and set it as a meeting construct that they can both respond to with confirmation of
-their intentions to come. 
+their intentions to come.
