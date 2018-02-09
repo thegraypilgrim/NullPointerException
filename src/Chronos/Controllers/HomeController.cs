@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Chronos.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,8 @@ namespace Chronos.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            Calendar userCalaneder = new Calendar();
+            return View(userCalaneder);
         }
     }
 }

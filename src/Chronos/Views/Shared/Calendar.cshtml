@@ -1,4 +1,12 @@
-﻿<div id="calendar" class="tab-pane fade in">
+﻿
+@model Chronos.Models.Calendar
+
+<div id="calendar" class="tab-pane fade in">
     <h2>Calendar</h2>
-    <p>Scheduling Info</p>
+    <p>Upcoming events</p>
+    <ul>
+        @foreach (string eventInfo in Model.getEvents()) {
+            <li>@eventInfo</li>
+        }
+    </ul>
 </div>
