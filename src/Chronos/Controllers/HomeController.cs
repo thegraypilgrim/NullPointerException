@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Chronos.Models;
 
 namespace Chronos.Controllers
 {
@@ -11,7 +12,13 @@ namespace Chronos.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+
+            TodoList list = new TodoList {
+                Items = new List<string>()
+            };
+            list.Items.Add("Do this");
+            list.Items.Add("Do that");
+            return View(list);
         }
     }
 }
