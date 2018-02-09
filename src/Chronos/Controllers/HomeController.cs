@@ -13,5 +13,8 @@ namespace Chronos.Controllers
         {
             return View();
         }
+        public ViewResult Login() {
+            return View();
+        }
     }
 }
