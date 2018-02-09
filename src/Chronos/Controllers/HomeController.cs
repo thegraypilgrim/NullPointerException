@@ -23,5 +23,8 @@ namespace Chronos.Controllers
             Calendar userCalaneder = new Calendar();
             return View(list, userCalaneder);
         }
+        public ViewResult Login() {
+            return View();
+        }
     }
 }
