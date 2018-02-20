@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Chronos.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +19,12 @@ namespace Chronos.Controllers
             };
             list.Items.Add("Do this");
             list.Items.Add("Do that");
-            return View(list);
+           
+            Calendar userCalaneder = new Calendar();
+            return View(list, userCalaneder);
+        }
+        public ViewResult Login() {
+            return View();
         }
     }
 }
