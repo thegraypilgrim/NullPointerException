@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Chronos.Models;
 
 namespace Chronos.Controllers
 {
@@ -20,8 +19,11 @@ namespace Chronos.Controllers
             list.Items.Add("Do this");
             list.Items.Add("Do that");
            
-            Calendar userCalaneder = new Calendar();
-            return View(list, userCalaneder);
+            Calendar userCalendar = new Calendar();
+            GroupContentModel groupContent = new GroupContentModel();
+            groupContent.TodoList = list;
+            groupContent.Calendar = userCalendar;
+            return View(groupContent);
         }
         public ViewResult Login() {
             return View();

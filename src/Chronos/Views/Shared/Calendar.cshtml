@@ -1,11 +1,11 @@
 ﻿
-@model Chronos.Models.Calendar
+@model Chronos.Models.GroupContentModel
 
 <div id="calendar" class="tab-pane fade in">
     <h2>Calendar</h2>
     <p>Upcoming events</p>
     <ul>
-        @foreach (string eventInfo in Model.getEvents()) {
+        @foreach (string eventInfo in Model.Calendar.getEvents()) {
             <li>@eventInfo</li>
         }
     </ul>
